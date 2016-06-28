@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="tests" thread-count="6">
+
+  <test name="Firefox Test">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="automationFramework.Exercise7"/>
+    </classes>
+  </test>
+    
+    <test name="safari Test">
+    <parameter name="browser" value="Safari"/>
+    <classes>
+      <class name="automationFramework.Exercise7"/>
+    </classes>
+  </test>
+  <test name="Chrome Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="automationFramework.Exercise7"/>
+    </classes>
+</test>
+
+  <test name="Firefoxre Test">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="automationFramework.Remodel"/>
+    </classes>
+  </test>
+    
+    <test name="safarire Test">
+    <parameter name="browser" value="Safari"/>
+    <classes>
+      <class name="automationFramework.Remodel"/>
+    </classes>
+  </test>
+  <test name="Chromere Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="automationFramework.Remodel"/>
+    </classes>
+</test>
+</suite>
